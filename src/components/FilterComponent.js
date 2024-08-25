@@ -37,7 +37,7 @@ export default function FilterComponent() {
 
     try {
       const parsedInput = JSON.parse(input);
-      const response = await axios.post('/process', { data: parsedInput.data });
+      const response = await axios.post('https://bajaj-task-backend-bi6z.onrender.com/process', { data: parsedInput.data });
 
       const result = response.data;
       setResponse(result);
